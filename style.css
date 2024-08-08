@@ -1,0 +1,1013 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ----- NAVBAR ----- */
+.herobg {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    top: 0;
+    z-index: -1;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    transition: 0.15s;
+    z-index: 100;
+}
+
+#header .logo {
+    display: block;
+    transition: 0.15s;
+}
+
+#header .logo:hover {
+    -webkit-filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.688));
+}
+
+#nav {
+    display: flex;
+    gap: 0 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+#nav .nav-item {
+    color: white;
+    padding: 3px 15px;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+
+#nav .nav-item:hover {
+    background-color: white;
+    color: #355592;
+}
+
+.button {
+    color: white;
+    min-width: 140px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 38px;
+    padding: 0 24px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.15s;
+}
+
+.button:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+a.button {
+    text-decoration: none;
+}
+
+button.button {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+}
+
+/* ----- MOBILE MENU ----- */
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 16px 0;
+    z-index: 90;
+    background-color: #355592;
+    border-radius: 0 0 0 20px;
+    font-size: 22px;
+    font-weight: 800;
+    transition: all 0.5s;
+    transform: translateX(100%);
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.mobile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    width: 150px;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+
+.mobile-menu a:hover {
+    background-color: white;
+    color: #355592;
+}
+
+#mobile-menu-button {
+    display: none;
+    margin-left: auto;
+    margin-right: 10px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.mobilebutton {
+    color: white;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 38px;
+    padding: 0 24px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.15s;
+}
+
+.mobilebutton:hover {
+    background-color: rgb(255, 196, 0);
+}
+    
+
+
+/* ----- HERO SECTION ----- */
+.herotag {
+    display: inline-block;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 120px;
+    color: white;
+    background-color: #355592;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px black;
+}
+
+.herohead {
+    color: white;
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 100px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.herotext {
+    padding: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.537);
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.herobuttons {
+    display: flex;
+    padding-top: 10px;
+    gap: 50px;
+}
+
+.herobtn1 {
+    display: inline-block;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: #355592;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: 800;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.herobtn1:hover {
+    background-color: rgb(78, 111, 210);
+}
+
+.herobtn2 {
+    display: inline-block;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: white;
+    background: none;
+    border: none;
+    outline: 3px solid white;
+    outline-offset: -3px;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: 800;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.herobtn2:hover {
+    background-color: rgba(255, 255, 255, 0.247);
+}
+
+/* ----- INFO SECTION -----*/
+#info {
+    background-color: rgb(241, 249, 253);
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info-object {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    margin: 15px;
+}
+
+.infotxt1 {
+    color: rgb(48, 73, 148);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.infotxt2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* ----- CLASSES SECTION -----*/
+#classes {
+    padding-top: 0px;
+}
+
+#classes .classes-bg {
+    position: absolute;
+    top: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%);
+    z-index: -1;
+}
+
+#classes h2 {
+    margin-top: 110px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#classes .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.classes-buttons {
+    gap: 40px;
+}
+
+.classes-buttons button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 0;
+    width: 180px;
+	background: #355592;
+    color: white;
+    border: none;
+	border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.tabBtn:hover {
+    background-color: orange;
+}
+
+.tabBtn.active {
+    background-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+.tabBtn.active:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: orange;
+	border-bottom: 0;
+    -webkit-filter: drop-shadow(0 0 5px orange);
+	margin-left: -10px;
+	margin-bottom: -9px;
+}
+
+.classTab {
+    display: flex;
+    margin-top: 60px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.classTab h3 {
+    margin-bottom: 30px;
+    color: rgb(80, 80, 80);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.classTab p {
+    color: rgb(80, 80, 80);
+    margin-top: 15px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+/* ----- BMI CALCULATOR SECTION ----- */
+.BMI-calc {
+    margin-top: 100px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.BMI-calc h3 {
+    margin-top: 50px;
+    font-size: 42px;
+    font-weight: 800;
+    color: #355592;
+}
+
+.BMI-calc p {
+    margin-top: 20px;
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.BMI-index {
+    width: 100%;
+}
+
+#BMI-indicator {
+    position: relative;
+    margin-left: 7%;
+    left: 1%;
+    color: orange;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.BMI-form {
+    margin-top: 30px;
+}
+
+.BMI-input {
+    background-color: #e4efff;
+    padding: 6px;
+    outline: none;
+    border: 3px solid #355592;
+    border-radius: 5px;
+    transition: 0.15s;
+    font-weight: 600;
+    width: 38%;
+}
+
+.BMI-input-label {
+    padding-left: 10px; 
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: 600;   
+}
+
+.BMI-input:focus {
+    background-color: white;
+    border: 3px solid orange;
+}
+
+/* ----- TRAINERS SECTION ----- */
+#trainers {
+    padding-top: 60px;
+    background-color: rgb(241, 249, 253);
+    transform: translateZ(-1px)
+}
+
+#trainers h2 {
+    margin-top: 50px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#trainers .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#trainers .underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.trainer-image {
+    border: 4px solid orange;
+    border-radius: 9px;
+    width: 300px;
+}
+
+.trainer {
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+
+.trainer-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.trainer-info:hover {
+    top: 5%;
+    opacity: 100%;
+}
+
+.trainer-info h3 {
+    position: relative;
+    top: 55%;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.trainer-info p {
+    position: relative;
+    top: 58%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.trainer-info::after {
+    content: "Jane Doe";
+    position: absolute;
+    background-color: #355592;
+    width: 80%;
+    height: 60%;
+    top: 20%;
+    left: 10%;
+    clip-path: polygon(0 60%, 10% 60%, 10% 50%, 90% 50%, 90% 60%, 100% 60%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+}
+
+.trainer::after {
+    content: "";
+    position: absolute;
+    background-color: #355592;
+    top: -2.5%;
+    left: -2.6%;
+    width: 105%;
+    height: 104%;
+    clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.trainer:hover::after {
+    clip-path: polygon(0 15%, 15% 15%, 15% 0, 85% 0, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0 85%);
+}
+
+/* ----- PRODUCTS SECTION ----- */
+#products {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+#products h2 {
+    margin-top: 50px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#products .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#products .underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.product-card {
+    margin-bottom: 60px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px darkgray;
+}
+
+.product-card img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-card h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.product-card p {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+.product-card span {
+    text-decoration: line-through;
+}
+
+.purchase {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.purchase i {
+    position: absolute;
+    font-size: 20px;
+    left: 10%;
+} 
+
+.purchase p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.purchase:hover {
+    color: white;
+    background-color: #355592;
+    border-radius: 0 0 10px 10px;
+}
+
+.purchase:hover i {
+    color: orange;
+}
+
+.gap {
+    gap: 10px;
+}
+
+/* ----- COMMENTS SECTION ----- */
+#comments {
+    padding-top: 60px;
+    background-color: rgb(241, 249, 253);
+    transform: translateZ(-1px);
+    padding-bottom: 20px;
+}
+
+#comments h2 {
+    margin-top: 50px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#comments .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#comments .underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.comment {
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+.client img {
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+}
+
+.client-name {
+    margin-left: 20px;
+}
+
+.client-name h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.comment-card {
+    position: relative;
+    color: white;
+    background-color: #355592;
+    padding: 15px 30px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.comment-card::before {
+    content: "";
+    position: absolute;
+    background-color: #678cc4;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    width: 40px;
+    height: 40px;
+    left: 0;
+    bottom: -2.48rem;
+}
+
+.comment-card::after {
+    content: "";
+    position: absolute;
+    background-color: #678cc4;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: -2.48rem;
+}
+
+/* ----- CONTACT SECTION ----- */
+#contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#contact h2 {
+    margin-top: 50px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#contact .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#contact .underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.contact-info {
+    margin: 10px;
+}
+
+.contact-form h3 {
+    margin-top: 40px;
+    color: black;
+    font-size: 36px;
+}
+
+.contact-input {
+    padding-left: 10px;
+    background-color: #e4efff;
+    margin-top: 35px;
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: 3px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.15s;
+}
+
+.contact-input:focus {
+    outline: 3px solid #355592;
+}
+
+.message-box {
+    resize: none;
+    padding-left: 10px;
+    background-color: #e4efff;
+    margin-top: 35px;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+    border: none;
+    outline: 3px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.15s;
+ }
+
+ .message-box:focus {
+    outline: 3px solid #355592;
+ }
+ .maps-frame {
+    margin-left:60px;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+
+ /* ----- FOOTER ----- */
+#footer {
+    background-color: #355592;
+    padding-bottom: 20px;
+}
+
+#footer img {
+    width: 200px;
+}
+
+#footer p {
+    color: white;
+}
+ #footer h4 {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+ }
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    line-height: 30px;
+}
+
+ #footer a {
+    width: auto;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ #footer a:hover {
+    text-decoration: underline;
+ }
+
+/* ----- MEDIA QUERIES ----- */
+@media (max-width: 768px) { 
+
+    body {
+        overflow: hidden;
+    }
+
+    /* --- NAVBAR --- */
+    #header .logo {
+        padding-left: 10px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #mobile-menu-button {
+        display: block;
+    }
+
+    /* --- HERO --- */
+    .herohead {
+        margin-top: 20px;
+        padding-left: 10px;
+        font-size: 72px;
+        line-height: 80px;
+    }
+    
+    .herotext {
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    
+    .herotag {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+       
+    .herobuttons {
+        padding-left: 10px;
+    }
+    
+    .herobtn1 {
+        font-size: 26px;
+    }
+    .herobtn2 {
+        font-size: 26px;
+    }
+    
+    /* --- CLASSES SECTION ---*/
+    #classes .classes-bg {
+        height: 190%;
+    }
+
+    .classes-buttons button{
+        width: 170px;
+    }
+
+    .classTab p {
+        padding: 10px;
+    }
+    .classTab h3 {
+        padding: 10px;
+    }
+
+    .classTab img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* --- BMI CALCULATOR SECTION --- */
+    .BMI-calc h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .BMI-calc p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+
+    .BMI-input {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 78%;
+        height: 48px;
+    }
+
+    .BMI-index {
+        margin-top: 20px;
+    }
+
+    /* --- TRAINERS SECTION --- */
+    .trainer {
+        margin: 20px auto;
+    }
+
+    #trainers .underline {
+        margin-bottom: 20px;  
+    }
+
+    /* --- PRODUCTS SECTION --- */
+    .product-card {
+        margin: 60px;
+        margin-bottom: 0;       
+    }
+
+    .product-card h3 {
+        font-size: 28px;
+    }
+    
+    .product-card p {
+        font-size: 20px;
+    }
+
+    /* --- CONTACT SECTION --- */
+    #contact {
+        margin: 10px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .maps-frame {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    /* --- FOOTER --- */
+    #footer {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Center</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./gridview.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <img class="herobg" src="./media/image/hero-man.jpg" alt="herobg"> <!-- Hero Background Image -->
+    
+    <!----- NAVIGATION BAR ----->
+    <header id="header">
+        <div class="container">
+            <div class="row center">
+                <div class="col-xs col-sm-3">
+                    <a href="./index.html">
+                        <img class="logo" src="./media/image/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xs col-sm-9">
+                    <nav id="nav">
+                        <a class="nav-item" href="./index.html">Home</a>
+                        <a class="nav-item" href="#classes">Classes</a>
+                        <a class="nav-item" href="#trainers">Trainer</a>
+                        <a class="nav-item" href="#comments">Review</a>
+                        <a class="nav-item" href="#contact">Contact</a>
+                        <a class="button" href="#">JOIN US</a>
+                    </nav>
+                    <a id="mobile-menu-button"><i class="bi bi-list"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+            <a href="#./index.html">Home</a>
+            <a href="#hero">About</a>
+            <a href="#classes">Classes</a>
+            <a href="#">Service</a>
+            <a href="#trainers">Trainer</a>
+            <a href="#comments">Review</a>
+            <a href="#">Blog</a>
+            <a href="#contact">Contact</a>
+            <a class="mobilebutton" href="#">JOIN US</a>
+        </div>
+    </header>
+   
+    <!----- HERO SECTION ----->
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="herotag">POWERFULL</p>
+                </div>
+                <div class="col-xs-12 col-lg-8">
+                    <div class="herohead">
+                        <p>Group <br> Practise <br> With Trainer</p>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p class="herotext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, magni magnam dicta ipsa impedit eaque at tempore accusantium rerum rem similique labore voluptate!</p>
+                </div>
+                <div>
+                    <div class="herobuttons">
+                        <button class="herobtn1">Sign Up</button>
+                        <button class="herobtn2">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- INFO SECTION ----->
+     <section id="info">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-lg-3">
+                    <div class="info-object">
+                        <p class="infotxt1">325</p>
+                        <p class="infotxt2">Course</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="info-object">
+                        <p class="infotxt1">405</p>
+                        <p class="infotxt2">Work Out</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="info-object">
+                        <p class="infotxt1">305</p>
+                        <p class="infotxt2">Working Hour</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="info-object">
+                        <p class="infotxt1">705</p>
+                        <p class="infotxt2">Happy Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!----- CLASSES SECTION ----->
+    <section id="classes">
+        <div class="classes-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>OUR CLASSES</h2>
+                    <div class="center">
+                        <div class="underline"></div>
+                    </div>
+                    <p class="htext">Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College</p>
+                </div>
+                <div class="col-xs-12">
+                    <div class="classes-buttons center">
+                        <button id="b1" class="tabBtn active" onclick="showTab('yoga');showActive('b1');">Yoga</button>
+                        <button id="b2" class="tabBtn" onclick="showTab('group');showActive('b2');">Group</button>
+                        <button id="b3" class="tabBtn" onclick="showTab('solo');showActive('b3');">Solo</button>
+                        <button id="b4" class="tabBtn" onclick="showTab('stretching');showActive('b4');">Stretching</button>
+                    </div>
+                </div>
+                <div class="classTabs">
+                <!-- YOGA CLASS -->
+                <div id="yoga" class="classTab center">
+                    <div class="col-xs-12 col-lg-6">
+                        <h3>Why are your Yoga</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate aut dolore atque repellat, molestias expedita harum non, error reiciendis ipsam ad laborum. Omnis consequatur suscipit beatae adipisci repellat iusto.</p><br><br>
+                        <h3>When comes Yoga Your Time</h3>
+                        <p>Saturday-Sunday:8:00am - 10:00am</p>
+                        <p>Monday-Tuesday:10:00am - 12:00pm</p>
+                        <p>Wednesday-Friday:3:00pm - 6:00pm</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 center">
+                        <img src="./media/image/yoga.jpg" alt="yoga" width="500px" height="350px">
+                    </div>
+                </div>
+                <!-- GROUP CLASS -->
+                <div id="group" class="classTab center hide">
+                    <div class="col-xs-12 col-lg-6 center">
+                        <img src="./media/image/group.webp" alt="group" width="500px" height="350px">
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <h3>Why are your Group</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate aut dolore atque repellat, molestias expedita harum non, error reiciendis ipsam ad laborum. Omnis consequatur suscipit beatae adipisci repellat iusto.</p><br><br>
+                        <h3>When comes Group Your Time</h3>
+                        <p>Saturday-Sunday:10:00am - 12:00am</p>
+                        <p>Monday-Tuesday:10:00am - 12:00pm</p>
+                        <p>Wednesday-Friday:3:00pm - 6:00pm</p>
+                    </div>
+                </div>
+                <!-- SOLO CLASS -->
+                <div id="solo" class="classTab center hide">
+                    <div class="col-xs-12 col-lg-6">
+                        <h3>Why are your Solo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate aut dolore atque repellat, molestias expedita harum non, error reiciendis ipsam ad laborum. Omnis consequatur suscipit beatae adipisci repellat iusto.</p><br><br>
+                        <h3>When comes Solo Your Time</h3>
+                        <p>Saturday-Sunday:8:00am - 10:00am</p>
+                        <p>Monday-Tuesday:10:00am - 12:00pm</p>
+                        <p>Wednesday-Friday:3:00pm - 6:00pm</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 center">
+                        <img src="./media/image/solo.jpg" alt="solo" width="500px" height="350px">
+                    </div>
+                </div>
+                <!-- STRETCHING CLASS -->
+                <div id="stretching" class="classTab center hide">
+                    <div class="col-xs-12 col-lg-6 center">
+                        <img src="./media/image/stret.webp" alt="stretching" width="500px" height="350px">
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <h3>Why are your Stretching</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate aut dolore atque repellat, molestias expedita harum non, error reiciendis ipsam ad laborum. Omnis consequatur suscipit beatae adipisci repellat iusto.</p><br><br>
+                        <h3>When comes Stretching Your Time</h3>
+                        <p>Saturday-Sunday:10:00am - 12:00am</p>
+                        <p>Monday-Tuesday:10:00am - 12:00pm</p>
+                        <p>Wednesday-Friday:3:00pm - 6:00pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- BMI CALCULATOR SECTION ----->
+     <section class="BMI-calc">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <div>
+                        <h3>BMI Calculator</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="BMI-form">
+                        <input id="height" class="BMI-input" type="number" placeholder="Your height"><span class="BMI-input-label"">cm</span>
+                        <input id="weight" class="BMI-input" type="number" placeholder="Your weight"><span class="BMI-input-label">kg</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="center">
+                        <p style="font-size: 28px; font-weight: 600;">Your BMI is <span id="bmi-output"> - </span></p>
+                    </div>
+                    <div>
+                        <img class="BMI-index" src="./media/image/bmi-index.jpg" alt="bmi-index">
+                        <div id="BMI-indicator"><i class="bi bi-triangle-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!----- TRAINERS SECTION ----->
+     <section id="trainers">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>OUR BEST TRAINERS</h2>
+                    <div class="center">
+                        <div class="underline"></div>
+                    </div>
+                    <p class="htext">Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College</p>
+                </div>
+                <div class="col-xs col-lg-4">
+                    <div class="trainer">
+                        <img class="trainer-image" src="./media/image/trainer1.jpg" alt="trainer1">
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Jane Doe</h3>
+                            <p>Cardio Trainer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs col-lg-4">
+                    <div class="trainer">
+                        <img class="trainer-image" src="./media/image/trainer2.jpg" alt="trainer1">
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">John Doe</h3>
+                            <p>Cardio Trainer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs col-lg-4">
+                    <div class="trainer">
+                        <img class="trainer-image" src="./media/image/trainer3.jpg" alt="trainer1">
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Jane Doe</h3>
+                            <p>Cardio Trainer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!----- PRODUCTS SECTION ----->
+     <section id="products">
+        <div class="container">
+            <div class="row center">
+                <div class="col-xs-12">
+                    <h2>PURCHASE FROM US</h2>
+                    <div class="center">
+                        <div class="underline"></div>
+                    </div>
+                    <p class="htext">Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College</p>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="product-card">
+                        <img src="./media/image/purchase1.jpg" alt="">
+                        <div>
+                            <h3>Kettlebell / 5kg</h3>
+                            <p><span>89,99$</span> / 59,99$</p>
+                        </div>
+                        <div class="purchase">
+                            <i class="bi bi-cart-fill"></i><p> Add To Cart</p>
+                        </div>               
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="product-card">
+                        <img src="./media/image/purchase2.jpg" alt="">
+                        <div>
+                            <h3>Treadmill</h3>
+                            <p><span>899,99$</span> / 599,99$</p>
+                        </div>
+                        <div class="purchase">
+                            <i class="bi bi-cart-fill"></i><p> Add To Cart</p>
+                        </div>               
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="product-card">
+                        <img src="./media/image/purchase3.jpg" alt="">
+                        <div>
+                            <h3>Adjustable Dumbell</h3>
+                            <p><span>89,99$</span> / 59,99$</p>
+                        </div>
+                        <div class="purchase">
+                            <i class="bi bi-cart-fill"></i><p> Add To Cart</p>
+                        </div>               
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="product-card">
+                        <img src="./media/image/purchase4.jpg" alt="">
+                        <div>
+                            <h3>Kettlebell / 3kg</h3>
+                            <p><span>89,99$</span> / 59,99$</p>
+                        </div>
+                        <div class="purchase">
+                            <i class="bi bi-cart-fill"></i><p> Add To Cart</p>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!----- COMMENTS SECTION ----->
+     <section id="comments">
+        <div class="container">
+            <div class="row center">
+                <div class="col-xs-12">
+                    <h2>REVIEW CLIENT</h2>
+                    <div class="center">
+                        <div class="underline"></div>
+                    </div>
+                    <p class="htext">Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College</p>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="comment">
+                        <div class="client">
+                            <img src="./media/image/client1.jpg" alt="client1">
+                            <div class="client-name">
+                                <h4>Diet Expert</h4>
+                                <p>CFO</p>
+                            </div>
+                        </div>
+                        <div class="comment-card">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio deleniti excepturi amet officia! Fugit autem id incidunt natus est tenetur, odio nisi excepturi exercitationem soluta accusamus eveniet officia voluptatem vitae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="comment">
+                        <div class="client">
+                            <img src="./media/image/client2.jpg" alt="client2">
+                            <div class="client-name">
+                                <h4>Cardio Trainer</h4>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                        <div class="comment-card">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio deleniti excepturi amet officia! Fugit autem id incidunt natus est tenetur, odio nisi excepturi exercitationem soluta accusamus eveniet officia voluptatem vitae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!----- CONTACT SECTION ----->
+     <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>CONTANCT US</h2>
+                    <div class="center">
+                        <div class="underline"></div>
+                    </div>
+                    <p class="htext">Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College</p>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4>Mobile Number</h4>
+                                <p>+135 773 321 4442</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h4>E-mail Address</h4>
+                                <p>demo@demo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Make An Appoinment</h3>
+                        <input id="name" class="contact-input" type="text" placeholder="Your Name">
+                        <input id="email" class="contact-input" type="email" placeholder="Your Email">
+                        <textarea name="message" id="message" class="message-box" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="maps-frame">
+                        <div style="width: 100%">
+                            <iframe width="100%" height="506" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!----- FOOTER ----->
+     <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <img src="./media/image/logo.png" alt="footerlogo">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur officia, dolorum quos animi beatae et amet aspernatur hic porro nulla consequatur sint quasi dignissimos deleniti suscipit dolores, ea tempore molestiae quia excepturi obcaecati possimus? Nemo temporibus aliquid vitae excepturi ut.</p>
+                <div class="col-xs-6">
+                    <div class="center">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <a href="#">About Us</a>
+                            <a href="#">Classes</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="center">
+                        <div class="footer-link">
+                            <h4>Helpful Links</h4>
+                            <a href="#">Services</a>
+                            <a href="#">Support</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privicy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+ <script src="./script.js"></script>
+</body>
+</html>
