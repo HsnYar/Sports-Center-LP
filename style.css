@@ -878,8 +878,8 @@ button.button {
 /* ----- MEDIA QUERIES ----- */
 @media (max-width: 768px) { 
 
-    body {
-        overflow: hidden;
+    html {
+        overflow-x: hidden;
     }
 
     /* --- NAVBAR --- */
